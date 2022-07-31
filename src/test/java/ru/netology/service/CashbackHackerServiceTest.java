@@ -1,9 +1,8 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
-
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackerServiceTest {
 
@@ -12,11 +11,11 @@ public class CashbackHackerServiceTest {
 
         CashbackHackerService hackerService = new CashbackHackerService();
 
-        int amount = 450;
+        int amount = 250;
         int actual = hackerService.remain(amount);
-        int expected = 550;
+        int expected = 750;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -28,7 +27,7 @@ public class CashbackHackerServiceTest {
         int actual = hackerService.remain(amount);
         int expected = 1000;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -36,11 +35,11 @@ public class CashbackHackerServiceTest {
 
         CashbackHackerService hackerService = new CashbackHackerService();
 
-        int amount = 1350;
+        int amount = 1740;
         int actual = hackerService.remain(amount);
-        int expected = 650;
+        int expected = 260;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -48,11 +47,11 @@ public class CashbackHackerServiceTest {
 
         CashbackHackerService hackerService = new CashbackHackerService();
 
-        int amount = 5720;
+        int amount = 5110;
         int actual = hackerService.remain(amount);
-        int expected = 280;
+        int expected = 890;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }
